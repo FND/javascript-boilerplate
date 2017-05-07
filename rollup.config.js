@@ -17,6 +17,8 @@ module.exports = generateConfig("./src/index.js", "./dist/bundle.js");
 // * `options.externals` determines which modules to exclude from the bundle
 //   (e.g. `{ jquery: "jQuery" }` - the key represents the respective module
 //   name, the value refers to the corresponding global variable)
+// * `options.moduleName` determines the global variable to hold the entry
+//   point's exports (if any)
 // * `options.noTranspile` is a list of modules for which to skip transpilation
 //   (e.g. `["jquery"]`, perhaps due to an already optimized ES5 distribution)
 function generateConfig(entryPoint, target, options = {}) {
