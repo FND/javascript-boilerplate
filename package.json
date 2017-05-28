@@ -3,7 +3,7 @@
     "test": "eslint --cache *.js src && echo ✓"
   },
   "devDependencies": {
-    "eslint": "^3.16.1",
-    "eslint-config-fnd": "^1.0.3"
+    "eslint": "^3.19.0",
+    "eslint-config-fnd": "^1.1.1"
   }
 }
