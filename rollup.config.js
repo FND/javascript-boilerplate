@@ -17,6 +17,8 @@ module.exports = generateConfig("./src/index.js", "./dist/bundle.js");
 // * `options.externals` determines which modules to exclude from the bundle
 //   (e.g. `{ jquery: "jQuery" }` - the key represents the respective module
 //   name, the value refers to the corresponding global variable)
+// * `options.format` determines the bundle format (defaults to IIFE); cf.
+//   https://github.com/rollup/rollup/wiki/JavaScript-API#format
 // * `options.moduleName` determines the global variable to hold the entry
 //   point's exports (if any)
 // * `options.noTranspile` is a list of modules for which to skip transpilation
