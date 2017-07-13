@@ -1,10 +1,9 @@
 {
-  "scripts": {
-    "test": "eslint --cache *.js src && echo ✓"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "eslint": "^3.19.0",
-    "eslint-config-fnd": "^1.1.1"
-  }
+	"scripts": {
+		"test": "eslint --cache *.js src && echo ✓"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint-config-fnd": "^1.1.1"
+	}
 }
