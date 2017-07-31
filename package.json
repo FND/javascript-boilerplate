@@ -15,10 +15,13 @@
 	"main": "…",
 	"module": "…",
 	"scripts": {
-		"test": "eslint --cache *.js src && echo ✓"
+		"start": "npm run compile -- --watch",
+		"test": "eslint --cache *.js src && echo ✓",
+		"compile": "faucet --compact"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"eslint-config-fnd": "^1.6.0"
+		"eslint-config-fnd": "^1.6.0",
+		"faucet-pipeline-js": "~1.0.0"
 	}
 }
