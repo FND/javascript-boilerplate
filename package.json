@@ -16,12 +16,12 @@
 	"module": "…",
 	"scripts": {
 		"start": "npm run compile -- --watch",
-		"test": "eslint --cache *.js src && echo ✓",
+		"test": "eslint --cache --ext .js --ext .jsx *.js src && echo ✓",
 		"compile": "faucet --compact"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"eslint-config-fnd": "^1.6.0",
-		"faucet-pipeline-js": "~1.0.0"
+		"eslint-config-fnd-jsx": "^1.6.0",
+		"faucet-pipeline-jsx": "~1.0.0"
 	}
 }

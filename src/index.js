@@ -1,3 +1,3 @@
-import util from "./util";
+import render from "./template";
 
-console.log(util);
+render("Hello World", "lorem ipsum");
