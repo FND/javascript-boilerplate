@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -eu
+
+root=`dirname "$0"`
+root=`realpath "$root"`
+self=`basename "$0"`
+
+target_dir=`realpath "${1:?}"`
+archive="_jsboilerplate.tar.gz"
+
+mkdir "$target_dir"
+
+cd "$root"
+git archive -o "$archive" HEAD
+tar xzf "$archive" -C "$target_dir"
+rm "$archive"
+
+cd "$target_dir"
+rm "$self"
+git init
+git add .
+git commit -m "initial commit"
+
+echo "✓ $target_dir"
