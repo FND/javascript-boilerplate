@@ -15,10 +15,14 @@
 	"main": "…",
 	"module": "…",
 	"scripts": {
-		"test": "eslint --cache *.js src && echo ✓"
+		"test": "npm run lint && npm run test:unit",
+		"test:unit": "qunit-reporter http://localhost:8000/test/index.html",
+		"lint": "eslint --cache src test && echo ✓"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"eslint-config-fnd": "^1.6.0"
+		"eslint-config-fnd": "^1.6.0",
+		"qunit": "^2.8.0",
+		"qunit-puppeteer-reporter": "^2.0.3"
 	}
 }
