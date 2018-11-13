@@ -15,10 +15,13 @@
 	"main": "…",
 	"module": "…",
 	"scripts": {
-		"test": "eslint --cache *.js src && echo ✓"
+		"test": "npm run lint && npm run test:unit",
+		"test:unit": "mocha test/test_*.js",
+		"lint": "eslint --cache src test && echo ✓"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"eslint-config-fnd": "^1.6.0"
+		"eslint-config-fnd": "^1.6.0",
+		"mocha": "^5.2.0"
 	}
 }
