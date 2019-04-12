@@ -1,1 +1,1 @@
---ui qunit
+--ui qunit --require esm

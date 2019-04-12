@@ -1,10 +1,10 @@
 /* global suite, test */
 "use strict";
 
-let assert = require("assert");
+import { strictEqual as assertSame, deepStrictEqual as assertDeep } from "assert";
 
 suite("sample");
 
 test("basics", () => {
-	assert.strictEqual(1, 2, "oops");
+	assertSame(1, 2, "oops");
 });
